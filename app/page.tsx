@@ -12,6 +12,7 @@ import { Suspense, useRef } from "react"
 import { useFrame } from "@react-three/fiber"
 import type * as THREE from "three"
 import dynamic from "next/dynamic"
+import { useRouter } from "next/navigation"
 
 
 function AnimatedMedicalDevice() {
@@ -146,6 +147,8 @@ const itemVariants = {
 }
 
 export default function HomePage() {
+  const router = useRouter()
+  
   return (
     <div className="min-h-screen bg-slate-900">
       {/* Hero Section */}
@@ -168,7 +171,7 @@ export default function HomePage() {
                     className="bg-blue-500/20 text-blue-300 hover:bg-blue-500/30 border border-blue-500/30 backdrop-blur-sm"
                   >
                     <Zap className="w-3 h-3 mr-1" />
-                    Trusted by 500+ Healthcare Facilities
+                    Trusted by 50+ Healthcare Facilities
                   </Badge>
                 </motion.div>
 
@@ -213,6 +216,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 text-lg group shadow-lg"
+                    onClick={() => router.push('/products')}
                   >
                     Explore Equipment
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -224,6 +228,7 @@ export default function HomePage() {
                     variant="outline"
                     size="lg"
                     className="border-slate-600 text-slate-800 hover:bg-slate-800 hover:border-slate-500 hover:text-white px-8 py-4 text-lg backdrop-blur-sm"
+                    onClick={() => router.push('/contact')}
                   >
                     Request Consultation
                   </Button>
@@ -232,8 +237,8 @@ export default function HomePage() {
 
               <motion.div className="flex items-center gap-8 pt-6" variants={containerVariants}>
                 {[
-                  { number: "25+", label: "Years Experience", color: "text-blue-400" },
-                  { number: "500+", label: "Installations", color: "text-green-400" },
+                  { number: "2+", label: "Years Experience", color: "text-blue-400" },
+                  { number: "250+", label: "Installations", color: "text-green-400" },
                   { number: "99.9%", label: "Uptime", color: "text-purple-400" },
                 ].map((stat, index) => (
                   <motion.div
@@ -280,7 +285,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.02 }}
               >
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/assets/images/biomed2.jpg"
                   alt="Advanced biomedical equipment in modern hospital setting"
                   width={600}
                   height={600}
@@ -307,8 +312,8 @@ export default function HomePage() {
                     <CheckCircle className="h-8 w-8 text-green-400" />
                   </motion.div>
                   <div>
-                    <div className="font-semibold text-white">FDA Approved</div>
-                    <div className="text-sm text-slate-400">All equipment certified</div>
+                    <div className="font-semibold text-white">Industry-Grade Reliability</div>
+                    <div className="text-sm text-slate-400">Built for mission-critical performance.</div>
                   </div>
                 </div>
               </motion.div>
@@ -421,24 +426,24 @@ export default function HomePage() {
           >
             {[
               {
-                title: "MRI Systems",
-                description: "High-resolution magnetic resonance imaging with advanced AI-powered diagnostics",
-                image: "/placeholder.svg?height=300&width=400",
-                features: ["3T Field Strength", "AI Diagnostics", "Patient Comfort"],
+                title: "Operation Theatre",
+                description: "Advanced equipment to support surgical precision and safety.",
+                image: "/assets/images/OT.jpg",
+                features: ["Surgical Lights", " Anesthesia Workstations", "OT Tables"],
                 color: "from-blue-500 to-cyan-500",
               },
               {
-                title: "Surgical Robots",
-                description: "Precision robotic systems for minimally invasive surgical procedures",
-                image: "/placeholder.svg?height=300&width=400",
-                features: ["Sub-millimeter Precision", "3D Visualization", "Haptic Feedback"],
+                title: "Emergency Department",
+                description: "Rapid-response tools for urgent diagnostics and treatment.",
+                image: "/assets/images/emergency.jpg",
+                features: ["Defibrillators", "Portable Monitors", "Emergency Ventilators"],
                 color: "from-purple-500 to-pink-500",
               },
               {
-                title: "Patient Monitors",
+                title: "ICU & NICU",
                 description: "Comprehensive vital sign monitoring with real-time analytics",
-                image: "/placeholder.svg?height=300&width=400",
-                features: ["Multi-parameter", "Wireless Connectivity", "Alert Systems"],
+                image: "/assets/images/nicu.jpg",
+                features: ["Multiparameter Monitors", "Infusion Pumps", "Neonatal Ventilators"],
                 color: "from-green-500 to-emerald-500",
               },
             ].map((equipment, index) => (
@@ -527,31 +532,31 @@ export default function HomePage() {
           >
             {[
               {
-                name: "Dr. Sarah Chen",
-                role: "Chief of Radiology",
-                hospital: "Metropolitan Medical Center",
+                name: "Dr. Mubesharin",
+                role: "Physiotherapist",
+                hospital: "Aster MIMS, Calicut",
                 content:
-                  "The precision and reliability of their MRI systems have transformed our diagnostic capabilities. Patient outcomes have improved significantly.",
+                  "The ultrasound therapy machine has proven to be incredibly effective in accelerating tissue healing and reducing inflammation.",
                 rating: 5,
                 avatar: "/placeholder.svg?height=60&width=60",
               },
               {
-                name: "Dr. Michael Rodriguez",
-                role: "Head of Surgery",
-                hospital: "St. Mary's Hospital",
+                name: "Dr. Shamseer V P",
+                role: "ENT Surgeon",
+                hospital: "NHS, United Kingdom",
                 content:
-                  "Their surgical robots have enabled us to perform complex procedures with unprecedented precision. The training and support were exceptional.",
+                  "Their advanced endoscopy system has allowed us to carry out diagnostic and therapeutic procedures with remarkable clarity and control. ",
                 rating: 5,
-                avatar: "/placeholder.svg?height=60&width=60",
+                avatar: "/assets/images/Shamseer.jpg?height=60&width=60",
               },
               {
-                name: "Lisa Thompson",
+                name: "Mohammed Irfan",
                 role: "Biomedical Engineer",
-                hospital: "Regional Health System",
+                hospital: "Iqraa Community Hospital, Wayanad",
                 content:
-                  "Outstanding equipment quality and responsive technical support. Their maintenance programs keep our systems running at peak performance.",
+                  "We’ve been consistently impressed with the reliability and build quality of their equipments. Coupled with technical support and maintenance services.",
                 rating: 5,
-                avatar: "/placeholder.svg?height=60&width=60",
+                avatar: "/assets/images/Irfan.jpg",
               },
             ].map((testimonial, index) => (
               <motion.div

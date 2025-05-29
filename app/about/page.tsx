@@ -109,7 +109,7 @@ export default function AboutPage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              For over 25 years, we've been at the forefront of biomedical innovation, delivering cutting-edge equipment
+              For over 2.5 years, we've been at the forefront of biomedical innovation, delivering cutting-edge equipment
               that empowers healthcare professionals to save lives and improve patient outcomes.
             </motion.p>
           </motion.div>
@@ -189,7 +189,7 @@ export default function AboutPage() {
                 whileHover={{ scale: 1.05 }}
               >
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/assets/images/about.jpg"
                   alt="Modern biomedical laboratory with advanced equipment"
                   width={600}
                   height={500}
@@ -244,7 +244,7 @@ export default function AboutPage() {
               Our Experience
             </Badge>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">
-              Decades of Excellence in Healthcare Innovation
+            Delivering Trusted Innovation in Healthcare Since 2022
             </h2>
           </motion.div>
 
@@ -258,23 +258,23 @@ export default function AboutPage() {
             {[
               {
                 icon: Award,
-                number: "25+",
+                number: "2+",
                 label: "Years of Experience",
-                description: "Leading biomedical innovation since 1999",
+                description: "Leading biomedical innovation since 2022",
                 color: "from-yellow-400 to-orange-500",
               },
               {
                 icon: Users,
-                number: "500+",
+                number: "50+",
                 label: "Healthcare Partners",
                 description: "Trusted by hospitals worldwide",
                 color: "from-blue-400 to-cyan-500",
               },
               {
                 icon: Globe,
-                number: "50+",
-                label: "Countries Served",
-                description: "Global reach with local support",
+                number: "30+",
+                label: "Cities Reached Across India",
+                description: "Serving India, Aiming for the World",
                 color: "from-green-400 to-emerald-500",
               },
               {
@@ -454,7 +454,7 @@ export default function AboutPage() {
             </Badge>
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Experts Driving Innovation</h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Our leadership team combines decades of medical expertise with cutting-edge technology innovation.
+              Our leadership team combines years of medical expertise with cutting-edge technology innovation.
             </p>
           </motion.div>
 
@@ -473,13 +473,13 @@ export default function AboutPage() {
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
-                name: "Parvesh",
+                name: "Parvesh S A",
                 role: "Chief Financial Officer",
                 experience: "20+ years in medical device innovation",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
-                name: "Famid",
+                name: "Famid V P C",
                 role: "VP of Quality Assurance",
                 experience: "Expert in FDA regulatory compliance",
                 image: "/placeholder.svg?height=300&width=300",
