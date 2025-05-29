@@ -10,8 +10,13 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "MedTech Solutions - Innovating Healthcare Through Precision Equipment",
   description:
-    "Leading provider of advanced biomedical equipment, empowering healthcare professionals with cutting-edge technology for over 25 years.",
-    generator: 'v0.dev'
+    "Leading provider of advanced biomedical equipment, empowering healthcare professionals with cutting-edge technology for over 3 years.",
+  generator: 'v0.dev',
+  icons: {
+    icon: '/assets/images/Favicon.png',
+    shortcut: '/assets/images/Favicon.png',
+    apple: '/assets/images/Favicon.png',
+  }
 }
 
 export default function RootLayout({

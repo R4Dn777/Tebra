@@ -90,7 +90,7 @@ function Hero3DScene() {
   return (
     <Canvas className="absolute inset-0">
       <PerspectiveCamera makeDefault position={[0, 0, 8]} />
-      <Environment preset="city" />
+      <Environment preset="sunset" />
       <ambientLight intensity={0.4} />
       <pointLight position={[10, 10, 10]} intensity={1} color="#3B82F6" />
       <pointLight position={[-10, -10, 5]} intensity={0.5} color="#10B981" />

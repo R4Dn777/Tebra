@@ -40,7 +40,7 @@ function ContactBackground3D() {
 function Background3D() {
   return (
     <Canvas className="absolute inset-0 opacity-20">
-      <Environment preset="city" />
+      <Environment preset="sunset" />
       <ambientLight intensity={0.3} />
       <pointLight position={[10, 10, 10]} intensity={0.5} />
       <Suspense fallback={null}>
