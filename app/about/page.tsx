@@ -470,25 +470,25 @@ export default function AboutPage() {
                 name: "Kamil Akthar",
                 role: "Chief Executive Officer",
                 experience: "Former Chief of Biomedical Engineering at Johns Hopkins",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/assets/images/akthar.jpg",
               },
               {
                 name: "Parvesh S A",
                 role: "Chief Financial Officer",
                 experience: "20+ years in medical device innovation",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/assets/images/parvesh.jpg",
               },
               {
                 name: "Famid V P C",
                 role: "VP of Quality Assurance",
                 experience: "Expert in FDA regulatory compliance",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/assets/images/Famid.jpg",
               },
               {
                 name: "Mohammed Radin",
                 role: "Chief Technology Officer",
                 experience: "Expert in FDA regulatory compliance",
-                image: "/placeholder.svg?height=300&width=300",
+                image: "/assets/images/radin.jpg",
               },
             ].map((member, index) => (
               <motion.div
