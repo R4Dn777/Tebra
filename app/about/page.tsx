@@ -467,20 +467,26 @@ export default function AboutPage() {
           >
             {[
               {
-                name: "Dr. Emily Watson",
+                name: "Kamil Akthar",
                 role: "Chief Executive Officer",
                 experience: "Former Chief of Biomedical Engineering at Johns Hopkins",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
-                name: "Dr. James Liu",
-                role: "Chief Technology Officer",
+                name: "Parvesh",
+                role: "Chief Financial Officer",
                 experience: "20+ years in medical device innovation",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
-                name: "Sarah Martinez",
+                name: "Famid",
                 role: "VP of Quality Assurance",
+                experience: "Expert in FDA regulatory compliance",
+                image: "/placeholder.svg?height=300&width=300",
+              },
+              {
+                name: "Mohammed Radin",
+                role: "Chief Technology Officer",
                 experience: "Expert in FDA regulatory compliance",
                 image: "/placeholder.svg?height=300&width=300",
               },
