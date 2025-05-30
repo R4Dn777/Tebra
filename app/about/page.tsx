@@ -468,26 +468,26 @@ export default function AboutPage() {
             {[
               {
                 name: "Kamil Akthar",
-                role: "Chief Executive Officer",
-                experience: "Former Chief of Biomedical Engineering at Johns Hopkins",
+                role: "Founder & CEO",
+                experience: "Visionary leader with a foundation in biomedical engineering and healthcare innovation",
                 image: "/assets/images/akthar.jpg",
               },
               {
                 name: "Parvesh S A",
-                role: "Chief Financial Officer",
-                experience: "20+ years in medical device innovation",
+                role: "Co-Founder & Regulatory Affairs Specialist",
+                experience: "3+ years of experience in medical device regulation and product compliance",
                 image: "/assets/images/parvesh.jpg",
               },
               {
                 name: "Famid V P C",
-                role: "VP of Quality Assurance",
-                experience: "Expert in FDA regulatory compliance",
+                role: "Co-Founder & VP of Quality Assurance",
+                experience: "Specialist in medical device quality systems and regulatory compliance",
                 image: "/assets/images/Famid.jpg",
               },
               {
                 name: "Mohammed Radin",
-                role: "Chief Technology Officer",
-                experience: "Expert in FDA regulatory compliance",
+                role: "Co-Founder & CTO",
+                experience: "Expert in healthcare technology strategy and product development",
                 image: "/assets/images/radin.jpg",
               },
             ].map((member, index) => (

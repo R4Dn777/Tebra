@@ -60,7 +60,7 @@ const products = [
   },
 ]
 
-const categories = ["All", "Imaging", "Monitoring", "Life Support", "Emergency", "Therapy"]
+const categories = ["All", "OT", "Monitoring", "Life Support", "Emergency", "Therapy"]
 
 export default function ProductsPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -74,7 +74,7 @@ export default function ProductsPage() {
   })
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-slate-800">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-transparent"></div>
@@ -145,7 +145,7 @@ export default function ProductsPage() {
                     className={`whitespace-nowrap ${
                       selectedCategory === category
                         ? "bg-blue-600 text-white hover:bg-blue-700"
-                        : "border-slate-700 text-slate-300 hover:bg-slate-800"
+                        : "border-slate-700 text-slate-600 hover:bg-slate-800 hover:text-white"
                     }`}
                   >
                     <Filter className="h-4 w-4 mr-2" />

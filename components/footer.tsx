@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Stethoscope, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 
 const containerVariants = {
@@ -44,12 +45,11 @@ export default function Footer() {
             <motion.div whileHover={{ scale: 1.05 }}>
               <Link href="/" className="flex items-center space-x-2">
                 <motion.div
-                  animate={{ rotate: 360 }}
                   transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                 >
-                  <Stethoscope className="h-8 w-8 text-blue-400" />
+                  <Image src="/assets/images/Logofooter.png" alt="logo" width={150} height={150} />
                 </motion.div>
-                <span className="text-xl font-bold">MedTech Solutions</span>
+                <span className="text-xl font-bold"></span>
               </Link>
             </motion.div>
             <p className="text-slate-300 leading-relaxed">
@@ -109,8 +109,9 @@ export default function Footer() {
                   <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
                 </motion.div>
                 <div className="text-slate-300">
-                  <p>123 Medical Technology Drive</p>
-                  <p>Innovation Park, CA 94025</p>
+                  <p>Vazhakkad</p>
+                  <p>Malappuram, Kerala-673640</p>
+                  <p>India</p>
                 </div>
               </motion.div>
               <motion.div className="flex items-center space-x-3" whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>

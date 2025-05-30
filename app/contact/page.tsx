@@ -339,11 +339,11 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold text-white mb-2">Headquarters</h3>
                           <p className="text-slate-300">
-                            123 Medical Technology Drive
+                            Vazhakkad
                             <br />
-                            Innovation Park, CA 94025
+                            Malappuram, Kerala-673640
                             <br />
-                            United States
+                            India
                           </p>
                         </div>
                       </div>
@@ -453,7 +453,7 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-semibold text-white mb-2">Business Hours</h3>
                           <p className="text-slate-300">
-                            Monday - Friday: 8:00 AM - 6:00 PM PST
+                            Monday - Friday: 10:00 AM - 5:00 PM IST
                             <br />
                             Saturday: 9:00 AM - 2:00 PM PST
                             <br />
@@ -500,8 +500,18 @@ export default function ContactPage() {
             <Card className="border-slate-700 bg-slate-800 overflow-hidden shadow-2xl">
               <div className="h-96 bg-slate-700 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234567890123!2d76.12345678901234!3d11.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64a9be29b058d%3A0x8ef5d3e1c0e1f1f1!2sVazhakkad%2C%20Malappuram%2C%20Kerala%20673640!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0"
+                ></iframe>
                 <motion.div
-                  className="text-center space-y-2 relative z-10"
+                  className="text-center space-y-2 relative z-10 bg-slate-800/90 p-4 rounded-lg"
                   animate={{
                     y: [0, -10, 0],
                   }}
@@ -524,8 +534,8 @@ export default function ContactPage() {
                   >
                     <MapPin className="h-12 w-12 text-blue-400 mx-auto" />
                   </motion.div>
-                  <p className="text-slate-300">Interactive map would be embedded here</p>
-                  <p className="text-sm text-slate-400">123 Medical Technology Drive, Innovation Park, CA 94025</p>
+                  <p className="text-slate-300">Visit our facility</p>
+                  <p className="text-sm text-slate-400">Vazhakkad, Malappuram, Kerala-673640, India</p>
                 </motion.div>
 
                 {/* Floating particles */}
